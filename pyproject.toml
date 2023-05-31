@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "multiagent-gcs"
+version = "0.1.0"
+description = ""
+authors = ["Bill Fan <fanbenlong@gmail.com>"]
+readme = "README.md"
+packages = [{include = "multiagent_gcs"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+numpy = "^1.24.3"
+plotly = "^5.14.1"
+scipy = "^1.10.1"
+mosek = "^10.0.46"
+cvxpy = {git = "https://github.com/wfan19/cvxpy.git", rev = "perspective_s_eq_0"}
+pyinstrument = "^4.4.0"
+pandas = "^2.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
